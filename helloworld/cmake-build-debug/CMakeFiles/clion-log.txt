@@ -1,6 +1,41 @@
-/home/sjl/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/sjl/CCode/grpc/examples/cpp/helloworld
+/home/sjl/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/sjl/CCode/Coding/Mytest/helloworld
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+CMake Warning (dev) at /usr/local/lib/cmake/protobuf/protobuf-options.cmake:6 (option):
+  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
+  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+  For compatibility with older versions of CMake, option is clearing the
+  normal variable 'protobuf_MODULE_COMPATIBLE'.
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/protobuf/protobuf-config.cmake:2 (include)
+  CMakeLists.txt:103 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
 -- Using protobuf 
 -- Using gRPC 1.32.0
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/sjl/CCode/grpc/examples/cpp/helloworld/cmake-build-debug
+-- Build files have been written to: /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug

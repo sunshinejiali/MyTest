@@ -1,4 +1,4 @@
-# Install script for directory: /home/sjl/CCode/grpc/examples/cpp/helloworld
+# Install script for directory: /home/sjl/CCode/Coding/Mytest/helloworld
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sjl/CCode/grpc/examples/cpp/helloworld/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
