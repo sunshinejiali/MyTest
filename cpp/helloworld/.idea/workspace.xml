@@ -20,12 +20,12 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="HelloWorld" targetName="greeter_server" />
-      <config projectName="HelloWorld" targetName="greeter_client" />
-      <config projectName="HelloWorld" targetName="greeter_async_client3" />
       <config projectName="HelloWorld" targetName="greeter_async_client2" />
-      <config projectName="HelloWorld" targetName="greeter_async_server" />
+      <config projectName="HelloWorld" targetName="greeter_server" />
       <config projectName="HelloWorld" targetName="greeter_async_client" />
+      <config projectName="HelloWorld" targetName="greeter_async_client3" />
+      <config projectName="HelloWorld" targetName="greeter_client" />
+      <config projectName="HelloWorld" targetName="greeter_async_server" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -35,11 +35,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c3022a7-0012-4d1a-a798-ed402aedf246" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/greeter_async_client2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/greeter_async_client2.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/greeter_async_server.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/greeter_async_server.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Sequence.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Sequence.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.." afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../protos/helloworld.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../../protos/helloworld.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1sgasIoZEfwLJXPu5LyS0Y3bZF4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -69,7 +66,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="CMake Application.greeter_async_server">
+  <component name="RunManager" selected="CMake Application.greeter_async_client3">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -132,6 +129,7 @@
       <workItem from="1621338723009" duration="11274000" />
       <workItem from="1621393119450" duration="560000" />
       <workItem from="1621393739311" duration="338000" />
+      <workItem from="1621394569370" duration="4701000" />
     </task>
     <servers />
   </component>
@@ -151,34 +149,50 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="299" key="#Log_Highlighting_(ideolog)" timestamp="1621305775830">
+    <state x="560" y="299" key="#Log_Highlighting_(ideolog)" timestamp="1621398039085">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="560" y="299" key="#Log_Highlighting_(ideolog)/65.24.1855.1056@65.24.1855.1056" timestamp="1621305775830" />
-    <state x="557" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621298589420">
+    <state x="560" y="299" key="#Log_Highlighting_(ideolog)/65.24.1855.1056@65.24.1855.1056" timestamp="1621398039085" />
+    <state x="557" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621399845586">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="557" y="334" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1621298589420" />
+    <state x="557" y="334" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1621399845586" />
     <state x="721" y="297" key="FileChooserDialogImpl" timestamp="1621304379029">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="721" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1621304379029" />
-    <state width="1803" height="474" key="GridCell.Tab.0.bottom" timestamp="1621393679250">
+    <state width="1803" height="448" key="GridCell.Tab.0.bottom" timestamp="1621400763867">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1803" height="474" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1621393679250" />
-    <state width="1803" height="474" key="GridCell.Tab.0.center" timestamp="1621393679249">
+    <state width="1803" height="448" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1621400763867" />
+    <state width="1803" height="448" key="GridCell.Tab.0.center" timestamp="1621400763866">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1803" height="474" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1621393679249" />
-    <state width="1803" height="474" key="GridCell.Tab.0.left" timestamp="1621393679248">
+    <state width="1803" height="448" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1621400763866" />
+    <state width="1803" height="448" key="GridCell.Tab.0.left" timestamp="1621400763866">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1803" height="474" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1621393679248" />
-    <state width="1803" height="474" key="GridCell.Tab.0.right" timestamp="1621393679249">
+    <state width="1803" height="448" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1621400763866" />
+    <state width="1803" height="448" key="GridCell.Tab.0.right" timestamp="1621400763867">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1803" height="474" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1621393679249" />
+    <state width="1803" height="448" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1621400763867" />
+    <state width="1803" height="352" key="GridCell.Tab.1.bottom" timestamp="1621398155379">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1803" height="352" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1621398155379" />
+    <state width="1803" height="352" key="GridCell.Tab.1.center" timestamp="1621398155379">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1803" height="352" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1621398155379" />
+    <state width="1803" height="352" key="GridCell.Tab.1.left" timestamp="1621398155379">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1803" height="352" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1621398155379" />
+    <state width="1803" height="352" key="GridCell.Tab.1.right" timestamp="1621398155379">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1803" height="352" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1621398155379" />
     <state x="516" y="174" key="SettingsEditor" timestamp="1621298563484">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>

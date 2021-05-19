@@ -47,10 +47,11 @@ class GreeterClient {
 
   // Assembles the client's payload, sends it and presents the response back
   // from the server.
-  std::string SayHello(const std::string& user) {
+  HelloReply SayHello(const std::int64_t number, const std::int64_t tt) {
     // Data we are sending to the server.
     HelloRequest request;
-    request.set_name(user);
+    request.set_number(number);
+    request.set_time_start(tt);
 
     // Container for the data we expect from the server.
     HelloReply reply;
@@ -96,9 +97,10 @@ class GreeterClient {
 
     // Act upon the status of the actual RPC.
     if (status.ok()) {
-      return reply.message();
+      return reply;
     } else {
-      return "RPC failed";
+      reply.set_error("RPC failed");
+      return reply;
     }
   }
 
@@ -115,21 +117,25 @@ int main(int argc, char** argv) {
   // (use of InsecureChannelCredentials()).
   GreeterClient greeter(grpc::CreateChannel(
       "localhost:50051", grpc::InsecureChannelCredentials()));
-  int number = 1;
+    int64_t number = 0;
     char const *fileName = "./LatencyTest.log";
     std::ofstream out;
-    out.open(fileName);
-  while(true) {
-      std::string user(std::to_string(number));
+    out.open(fileName, std::ios::trunc);
+    int64_t m= 100000;
+    timespec start_n, end_n;
+    clock_gettime(CLOCK_REALTIME, &start_n);
+  while(m--) {
       number++;
       timespec tt, ta;
       clock_gettime(CLOCK_REALTIME,&tt);
-      std::string reply = greeter.SayHello(user);  // The actual RPC call!
+      HelloReply reply = greeter.SayHello(number, tt.tv_nsec);  // The actual RPC call!
       clock_gettime(CLOCK_REALTIME,&ta);
-      const char *p = reply.data();
-      out << tt.tv_nsec << ' ' << p << ' ' << ta.tv_nsec << ' ' << ta.tv_nsec-tt.tv_nsec <<'\n';
-      std::cout << "Greeter received: " << p << " " <<ta.tv_nsec << std::endl;
+      out << reply.number() << ' ' << reply.time_start() << ' ' << ta.tv_nsec << ' ' << ta.tv_nsec-tt.tv_nsec <<'\n';
+      std::cout << "Greeter received: " << reply.number() << " " <<ta.tv_nsec << std::endl;
   }
+    clock_gettime(CLOCK_REALTIME, &end_n);
+  out << "Total Latency: " << end_n.tv_sec-start_n.tv_sec << std::endl;
+  std::cout << "Total Latency: " << end_n.tv_sec-start_n.tv_sec << std::endl;
   out.close();
   return 0;
 }

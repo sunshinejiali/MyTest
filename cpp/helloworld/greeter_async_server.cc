@@ -104,13 +104,12 @@ class ServerImpl final {
 
         std::ofstream out;
         out.open("./Sequence.log", std::ios::app);
-        const char *p = request_.name().data();
-        out << p << '\n';
+        out << request_.number()<< ' ' << '\n';
         out.close();
 
         // The actual processing.
-        std::string prefix("Hello ");
-        reply_.set_message(prefix + request_.name());
+        reply_.set_number(request_.number());
+        reply_.set_time_start(request_.time_start());
 
         // And we are done! Let the gRPC runtime know we've finished, using the
         // memory address of this instance as the uniquely identifying tag for

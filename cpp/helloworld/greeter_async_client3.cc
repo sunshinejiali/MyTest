@@ -47,10 +47,11 @@ public:
             : stub_(Greeter::NewStub(channel)) {}
 
     // Assembles the client's payload and sends it to the server.
-    void SayHello(const std::string& user) {
+    void SayHello(const std::int64_t number, const std::int64_t tt) {
         // Data we are sending to the server.
         HelloRequest request;
-        request.set_name(user);
+        request.set_number(number);
+        request.set_time_start(tt);
 
         // Call object to store rpc data
         AsyncClientCall* call = new AsyncClientCall;
@@ -92,21 +93,13 @@ public:
                 clock_gettime(CLOCK_REALTIME,&ta);
                 std::ofstream out;
                 out.open("./AsyncLatencyTest.log", std::ios::app);
-                const char *p = call->reply.message().data();
-                std::string  x= p;
-                std::vector<std::string> tokens;  // vector
-                std::stringstream ss(call->reply.message());
-                while (ss >> x)
-                    tokens.push_back(x);
-                const char * xa = tokens[2].data();
-                std::int64_t m = atoi(xa);
-                out << p << ' ' << ta.tv_nsec << ' ' << ta.tv_nsec - m << '\n';
+                out << call->reply.number() << ' ' << call->reply.time_start() << ' ' << ta.tv_nsec << ' ' << ta.tv_nsec - call->reply.time_start() << '\n';
                 /*timespec tb;
                 clock_gettime(CLOCK_REALTIME,&tb);*/
-                std::cout << "Greeter received: " << call->reply.message() << std::endl;
+                //std::cout << "Greeter received: " << call->reply.number() << std::endl;
             }
             else
-                std::cout << "RPC failed" << std::endl;
+                //std::cout << "RPC failed" << std::endl;
 
             // Once we're complete, deallocate the call object.
             delete call;
@@ -160,8 +153,7 @@ int main(int argc, char** argv) {
         number++;
         timespec tt;
         clock_gettime(CLOCK_REALTIME,&tt);
-        std::string user(std::to_string(number) + " " + std::to_string(tt.tv_nsec));
-        greeter.SayHello(user);  // The actual RPC call!
+        greeter.SayHello(number, tt.tv_nsec);  // The actual RPC call!
     }
     out.close();
     std::cout << "Press control-c to quit" << std::endl << std::endl;

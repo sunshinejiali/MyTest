@@ -45,10 +45,11 @@ class GreeterClient {
             : stub_(Greeter::NewStub(channel)) {}
 
     // Assembles the client's payload and sends it to the server.
-    void SayHello(const std::string& user) {
+    void SayHello(const std::int64_t number, const std::int64_t tt) {
         // Data we are sending to the server.
         HelloRequest request;
-        request.set_name(user);
+        request.set_number(number);
+        request.set_time_start(tt);
 
         // Call object to store rpc data
         AsyncClientCall* call = new AsyncClientCall;
@@ -85,10 +86,10 @@ class GreeterClient {
             // corresponds solely to the request for updates introduced by Finish().
             GPR_ASSERT(ok);
 
-            if (call->status.ok())
-                std::cout << "Greeter received: " << call->reply.message() << std::endl;
+            /*if (call->status.ok())
+                std::cout << "Greeter received: " << call->reply.number() << std::endl;
             else
-                std::cout << "RPC failed" << std::endl;
+                std::cout << "RPC failed" << std::endl;*/
 
             // Once we're complete, deallocate the call object.
             delete call;
@@ -138,17 +139,21 @@ int main(int argc, char** argv) {
     std::thread thread_ = std::thread(&GreeterClient::AsyncCompleteRpc, &greeter);
     std::thread thread_1 = std::thread(&GreeterClient::AsyncCompleteRpc, &greeter1);
     int number = 0;
-    while(true) {
+    int64_t m= 100000;
+    timespec start_n, end_n;
+    clock_gettime(CLOCK_REALTIME, &start_n);
+    while(m--) {
         number++;
-        std::string user("world " + std::to_string(number));
+        timespec tt;
+        clock_gettime(CLOCK_REALTIME,&tt);
         if(number % 2)
-            greeter.SayHello(user);  // The actual RPC call!
+            greeter.SayHello(number, tt.tv_nsec);  // The actual RPC call!
         else
-            greeter1.SayHello(user);
+            greeter1.SayHello(number, tt.tv_nsec);
     }
-
+    clock_gettime(CLOCK_REALTIME, &end_n);
+    std::cout<< "Total Latency: " << end_n.tv_sec-start_n.tv_sec << std::endl;
     std::cout << "Press control-c to quit" << std::endl << std::endl;
     thread_.join();  //blocks forever
-
     return 0;
 }
