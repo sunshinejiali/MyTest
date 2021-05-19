@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="HelloWorld" targetName="greeter_async_client2" />
+      <config projectName="HelloWorld" targetName="greeter_server" />
+      <config projectName="HelloWorld" targetName="greeter_async_client" />
+      <config projectName="HelloWorld" targetName="greeter_async_client3" />
+      <config projectName="HelloWorld" targetName="greeter_async_server" />
+      <config projectName="HelloWorld" targetName="greeter_client" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3c3022a7-0012-4d1a-a798-ed402aedf246" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/greeter_async_client3.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greeter_async_client.cc" beforeDir="false" afterPath="$PROJECT_DIR$/greeter_async_client.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greeter_async_client2.cc" beforeDir="false" afterPath="$PROJECT_DIR$/greeter_async_client2.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greeter_async_server.cc" beforeDir="false" afterPath="$PROJECT_DIR$/greeter_async_server.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greeter_client.cc" beforeDir="false" afterPath="$PROJECT_DIR$/greeter_client.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greeter_server.cc" beforeDir="false" afterPath="$PROJECT_DIR$/greeter_server.cc" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1sgasIoZEfwLJXPu5LyS0Y3bZF4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../requirements.txt" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="CMake Application.greeter_async_client3">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="greeter_async_client" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="greeter_async_client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HelloWorld" RUN_TARGET_NAME="greeter_async_client">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="greeter_async_client2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="greeter_async_client2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HelloWorld" RUN_TARGET_NAME="greeter_async_client2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="greeter_async_client3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="greeter_async_client3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HelloWorld" RUN_TARGET_NAME="greeter_async_client3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="greeter_async_server" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="greeter_async_server" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HelloWorld" RUN_TARGET_NAME="greeter_async_server">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="greeter_client" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="greeter_client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HelloWorld" RUN_TARGET_NAME="greeter_client">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="greeter_server" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld" TARGET_NAME="greeter_server" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HelloWorld" RUN_TARGET_NAME="greeter_server">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.greeter_async_client" />
+      <item itemvalue="CMake Application.greeter_async_client2" />
+      <item itemvalue="CMake Application.greeter_async_client3" />
+      <item itemvalue="CMake Application.greeter_async_server" />
+      <item itemvalue="CMake Application.greeter_client" />
+      <item itemvalue="CMake Application.greeter_server" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c3022a7-0012-4d1a-a798-ed402aedf246" name="Default Changelist" comment="" />
+      <created>1621296891903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621296891903</updated>
+      <workItem from="1621296893067" duration="67000" />
+      <workItem from="1621297075289" duration="13333000" />
+      <workItem from="1621338723009" duration="11274000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="299" key="#Log_Highlighting_(ideolog)" timestamp="1621305775830">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="560" y="299" key="#Log_Highlighting_(ideolog)/65.24.1855.1056@65.24.1855.1056" timestamp="1621305775830" />
+    <state x="557" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621298589420">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="557" y="334" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1621298589420" />
+    <state x="721" y="297" key="FileChooserDialogImpl" timestamp="1621304379029">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="721" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1621304379029" />
+    <state width="1803" height="477" key="GridCell.Tab.0.bottom" timestamp="1621390603123">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1803" height="477" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1621390603123" />
+    <state width="1803" height="477" key="GridCell.Tab.0.center" timestamp="1621390603121">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1803" height="477" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1621390603121" />
+    <state width="1803" height="477" key="GridCell.Tab.0.left" timestamp="1621390603119">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1803" height="477" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1621390603119" />
+    <state width="1803" height="477" key="GridCell.Tab.0.right" timestamp="1621390603122">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1803" height="477" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1621390603122" />
+    <state x="516" y="174" key="SettingsEditor" timestamp="1621298563484">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="516" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1621298563484" />
+    <state x="701" y="448" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1621387120546">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="701" y="448" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1621387120546" />
+  </component>
+</project>

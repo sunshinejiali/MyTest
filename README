@@ -1,0 +1,7 @@
+1.greeter_async_server.cc  与 greeter_async_client.cc 同时使用
+server建立Sequence.log,查看写入顺序
+client建立LatencyTest.log,查看同步写入时延
+2.greeter_async_client2.cc
+多线程异步发送
+3.greeter_async_client3.cc
+异步发送，查看时延，文件AsyncLatencyTest.log

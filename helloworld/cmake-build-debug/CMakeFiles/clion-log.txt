@@ -1,0 +1,6 @@
+/home/sjl/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/sjl/CCode/grpc/examples/cpp/helloworld
+-- Using protobuf 
+-- Using gRPC 1.32.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sjl/CCode/grpc/examples/cpp/helloworld/cmake-build-debug
