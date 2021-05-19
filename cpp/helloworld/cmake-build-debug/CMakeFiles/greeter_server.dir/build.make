@@ -63,10 +63,10 @@ RM = /home/sjl/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sjl/CCode/Coding/Mytest/helloworld
+CMAKE_SOURCE_DIR = /home/sjl/CCode/Coding/Mytest/cpp/helloworld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug
+CMAKE_BINARY_DIR = /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/greeter_server.dir/depend.make
@@ -77,9 +77,9 @@ include CMakeFiles/greeter_server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/greeter_server.dir/flags.make
 
-helloworld.pb.cc: /home/sjl/CCode/Coding/protos/helloworld.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating helloworld.pb.cc, helloworld.pb.h, helloworld.grpc.pb.cc, helloworld.grpc.pb.h"
-	/usr/local/bin/protoc-3.13.0.0 --grpc_out /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug --cpp_out /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug -I /home/sjl/CCode/Coding/protos --plugin=protoc-gen-grpc="/usr/local/bin/grpc_cpp_plugin" /home/sjl/CCode/Coding/protos/helloworld.proto
+helloworld.pb.cc: /home/sjl/CCode/Coding/Mytest/protos/helloworld.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating helloworld.pb.cc, helloworld.pb.h, helloworld.grpc.pb.cc, helloworld.grpc.pb.h"
+	/usr/local/bin/protoc-3.13.0.0 --grpc_out /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug --cpp_out /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug -I /home/sjl/CCode/Coding/Mytest/protos --plugin=protoc-gen-grpc="/usr/local/bin/grpc_cpp_plugin" /home/sjl/CCode/Coding/Mytest/protos/helloworld.proto
 
 helloworld.pb.h: helloworld.pb.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate helloworld.pb.h
@@ -92,42 +92,42 @@ helloworld.grpc.pb.h: helloworld.pb.cc
 
 CMakeFiles/greeter_server.dir/greeter_server.cc.o: CMakeFiles/greeter_server.dir/flags.make
 CMakeFiles/greeter_server.dir/greeter_server.cc.o: ../greeter_server.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/greeter_server.dir/greeter_server.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/greeter_server.dir/greeter_server.cc.o -c /home/sjl/CCode/Coding/Mytest/helloworld/greeter_server.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/greeter_server.dir/greeter_server.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/greeter_server.dir/greeter_server.cc.o -c /home/sjl/CCode/Coding/Mytest/cpp/helloworld/greeter_server.cc
 
 CMakeFiles/greeter_server.dir/greeter_server.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/greeter_server.dir/greeter_server.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sjl/CCode/Coding/Mytest/helloworld/greeter_server.cc > CMakeFiles/greeter_server.dir/greeter_server.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sjl/CCode/Coding/Mytest/cpp/helloworld/greeter_server.cc > CMakeFiles/greeter_server.dir/greeter_server.cc.i
 
 CMakeFiles/greeter_server.dir/greeter_server.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/greeter_server.dir/greeter_server.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sjl/CCode/Coding/Mytest/helloworld/greeter_server.cc -o CMakeFiles/greeter_server.dir/greeter_server.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sjl/CCode/Coding/Mytest/cpp/helloworld/greeter_server.cc -o CMakeFiles/greeter_server.dir/greeter_server.cc.s
 
 CMakeFiles/greeter_server.dir/helloworld.pb.cc.o: CMakeFiles/greeter_server.dir/flags.make
 CMakeFiles/greeter_server.dir/helloworld.pb.cc.o: helloworld.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/greeter_server.dir/helloworld.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/greeter_server.dir/helloworld.pb.cc.o -c /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/helloworld.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/greeter_server.dir/helloworld.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/greeter_server.dir/helloworld.pb.cc.o -c /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/helloworld.pb.cc
 
 CMakeFiles/greeter_server.dir/helloworld.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/greeter_server.dir/helloworld.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/helloworld.pb.cc > CMakeFiles/greeter_server.dir/helloworld.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/helloworld.pb.cc > CMakeFiles/greeter_server.dir/helloworld.pb.cc.i
 
 CMakeFiles/greeter_server.dir/helloworld.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/greeter_server.dir/helloworld.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/helloworld.pb.cc -o CMakeFiles/greeter_server.dir/helloworld.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/helloworld.pb.cc -o CMakeFiles/greeter_server.dir/helloworld.pb.cc.s
 
 CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.o: CMakeFiles/greeter_server.dir/flags.make
 CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.o: helloworld.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.o -c /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/helloworld.grpc.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.o -c /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/helloworld.grpc.pb.cc
 
 CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/helloworld.grpc.pb.cc > CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/helloworld.grpc.pb.cc > CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.i
 
 CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/helloworld.grpc.pb.cc -o CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/helloworld.grpc.pb.cc -o CMakeFiles/greeter_server.dir/helloworld.grpc.pb.cc.s
 
 # Object files for target greeter_server
 greeter_server_OBJECTS = \
@@ -185,7 +185,7 @@ greeter_server: /usr/lib/x86_64-linux-gnu/librt.so
 greeter_server: /usr/local/lib/libaddress_sorting.a
 greeter_server: /usr/local/lib/libupb.a
 greeter_server: CMakeFiles/greeter_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable greeter_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable greeter_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/greeter_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -201,6 +201,6 @@ CMakeFiles/greeter_server.dir/depend: helloworld.pb.cc
 CMakeFiles/greeter_server.dir/depend: helloworld.pb.h
 CMakeFiles/greeter_server.dir/depend: helloworld.grpc.pb.cc
 CMakeFiles/greeter_server.dir/depend: helloworld.grpc.pb.h
-	cd /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sjl/CCode/Coding/Mytest/helloworld /home/sjl/CCode/Coding/Mytest/helloworld /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug /home/sjl/CCode/Coding/Mytest/helloworld/cmake-build-debug/CMakeFiles/greeter_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sjl/CCode/Coding/Mytest/cpp/helloworld /home/sjl/CCode/Coding/Mytest/cpp/helloworld /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug /home/sjl/CCode/Coding/Mytest/cpp/helloworld/cmake-build-debug/CMakeFiles/greeter_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/greeter_server.dir/depend
 
